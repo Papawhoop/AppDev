@@ -1,24 +1,205 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
+    <title>Snowaddicts - Our drug of choice is white powder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <![endif]-->
+
+
     <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Christopher Mally">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <%= yield %>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+  </style>
+
+  <div class="mainNavigation">
+      <nav>
+        <div title="Menu" id="menuToggle">
+          <input id="logoTrigger" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <li class="first fadeIn">
+              <a href="#">Home</a>
+            </li>
+
+            <li class="fadeIn">
+              <a>Spots</a>
+            </li>
+
+            <li class="fadeIn">
+              <a href="#">Gear</a>
+            </li>
+
+            <li class="fadeIn">
+              <a>Weather</a>
+            </li>
+
+            <li class="fadeIn">
+              <a>Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="regnav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Spots</a>
+            <ul>
+              <li><a href="">Alps</a>
+                <ul>
+
+                  <li><a href="#">Austria</a></li>
+                  <li><a href="#">France</a></li>
+                  <li><a href="#">Germany</a></li>
+                  <li><a href="#">Italy</a></li>
+                  <li><a href="#">Slowenia</a></li>
+                  <li><a href="#">Swiss</a></li>
+
+                </ul>
+              <li><a href="">Andes</a>
+                <ul>
+                  <li>
+                    <a href="">Agentinia</a>
+                  </li>
+                  <li>
+                    <a href="">Chile</a>
+                  </li>
+                </ul>
+              <li>
+                <a href="">Carpathians</a>
+                <ul>
+                  <li>
+                    <a href="">Slowakia</a>
+                  </li>
+                  <li><a href="">Romania</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="">Himalaya</a>
+                <ul>
+                  <li>
+                    <a href="">Nepal</a>
+                  </li>
+                  <li>
+                    <a href="">India</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Japanese Alps</a>
+                <ul>
+                  <li>
+                    <a href="">Japan</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Pyrenees</a>
+                <ul>
+                  <li>
+                    <a href="">France</a>
+                  </li>
+                  <li>
+                    <a href="">Spain</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Rocky Mountains</a>
+                <ul>
+                  <li>
+                    <a href="">USA</a>
+                  </li>
+
+                  <li>
+                    <a href="">Canada</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="">Yulong Xueshan</a>
+                <ul>
+                  <li>
+                    <a href="">China</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#">Gear</a>
+            <ul>
+              <li><a href=""><b>BRANDS</b></a>
+                <ul>
+                  <li><a href="">Adidas</a></li>
+                  <li><a href="">Anon</a></li>
+                  <li><a href="">Arbor Collective</a></li>
+                  <li><a href="">Burton</a></li>
+                  <li><a href="">Dragon</a></li>
+                  <li><a href="">Flow</a></li>
+                  <li><a href="">Nitro</a></li>
+                  <li><a href="">Under Armour</a></li>
+                  <li><a href="">Vans</a></li>
+                </ul>
+              </li>
+
+              <li><a href="">Bindings</a></li>
+              <li><a href="">Snowoards</a>
+                <ul>
+                  <li><a href="#">Allmountain</a>
+                  </li>
+                  <li><a href="#">Park</a>
+                  </li>
+                  <li><a href="#">Powder/Surf</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="">Backpacks</a></li>
+              <li><a href="">Caps</a></li>
+              <li><a href="">Goggles</a></li>
+              <li><a href="">Jackets</a></li>
+              <li><a href="">Pants</a></li>
+              <li>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#">Weather</a></li>
+          <ul>
+            <li>
+              <a>
+                Snow-Map
+              </a>
+            </li>
+          </ul>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <!--Scripts for every Page-->
+
+  <%= yield %>
   </body>
-<footer>
-  CM WEBDEV
-</footer>
+
 </html>

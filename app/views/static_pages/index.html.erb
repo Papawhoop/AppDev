@@ -1,3 +1,62 @@
-<h1>Welcome to Snowaddicts</h1>
-<h2>Your source for Powdersports-Wear!</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+<div id="snowAddicts" class="slideMe">
+  <a class="animated pulse btn_next_floatingl skipBtnSlide" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="animated pulse btn_next_floatingr skipBtnSlide" onclick="plusDivs(+1)">&#10095;</a>
+  <div class="homeHero regularscreen2">
+    <div class="upperBody">
+      <%= image_tag("snow.jpg", class:"responsive-max regularscreen") %>
+      <%= image_tag("snowmobile.jpg", class:"responsive-img mobilescreen") %>
+      <div class="cta">
+        <h1 class="whiteMe">
+          <big>We are</big> <big class="orange animated bounceInLeft">Snowaddicts.</big>
+        </h1>
+        <br>
+        <p class="regularscreen2">
+          We deliver you the best archive of Snow Spots, Weatherinfos and Gear in the world.
+      </div>
+      <div class="latestOffsetBox regularscreen">
+        <div class="offsetBox">
+          <a href="#map">
+            <div class="btn-cta">
+              <h4>
+                Snowmap
+              </h4>
+              <p>Do not miss our interactive weather map <br>
+                to see where the powder comes down this year.</p>
+            </div>
+          </a>
+        </div>
+        <div class="offsetBox2">
+          <a href="#gearAnchor">
+            <div class="btn-cta2">
+              <%= image_tag("staffpick.png", class:"staffPickLg regularscreen") %>
+
+              <h1>
+                Top 5
+              </h1>
+              <h4>Brands/Spots</h4><br>
+              <p> Staff pick! These are our Top 5 Spots (Countries) and Brands for <br>
+                Powdersports this season. Click to see!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--Navigation inherited from Application ERB-->
+
+<!-- ============================= -->
+<!-- JavaScript/JQuery inherited -->
+<!-- ============================= -->
+
+</body>
+</html>
 
